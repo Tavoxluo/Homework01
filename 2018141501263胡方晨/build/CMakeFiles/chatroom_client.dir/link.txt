@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/chatroom_client.dir/src/Client.cpp.o CMakeFiles/chatroom_client.dir/src/ClientMain.cpp.o  -o ../bin/chatroom_client 

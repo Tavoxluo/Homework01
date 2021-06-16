@@ -1,0 +1,4 @@
+/home/fangchen/instant_messaging_utility/build/CMakeFiles/rebuild_cache.dir
+/home/fangchen/instant_messaging_utility/build/CMakeFiles/edit_cache.dir
+/home/fangchen/instant_messaging_utility/build/CMakeFiles/chatroom_client.dir
+/home/fangchen/instant_messaging_utility/build/CMakeFiles/chatroom_server.dir

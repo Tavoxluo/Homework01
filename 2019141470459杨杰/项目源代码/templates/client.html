@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>registor_failed</title>
+    <style type="text/css">
+        div {
+            text-align: center;
+            line-height: 200px;
+            /*文字水平居中*/
+            margin: auto;
+            /*div水平居中*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <head>欢迎来到网上银行</head>
+        <br />欢迎：{{username}}<br />
+        <table border="1" align="center">
+            <tr>
+                <td>账户余额：{{left_money}}
+                    <br/>
+                    <a href="/trade_record/{{cookie}}">交易记录</a>
+                </td>
+                <td>关联银行卡 : {{conn_status}} : {{bank_card_id}}
+                    <br />
+                    <a href="/static/{{cookie}}/bank_connect.html">关联详情</a>
+                </td>
+                <td>账户登录记录信息
+                    <br />
+                    <a href="/static/{{cookie}}/unfinish.html">点击查看</a>
+                </td>
+                <td>交易
+                    <br />
+                    <a href="/static/{{cookie}}/trade.html">点击进行交易</a>
+                </td>
+            </tr>
+        </table>
+        <a href='/logout/{{cookie}}' align="center">注销账户</a>
+    </div>
+    <script>
+        function chk() {
+            var myform = document.getElementById("username");
+            var psw = document.getElementById("password");
+            if (myform.value == '') {
+                document.getElementById(("errinfo")).innerHTML = '必须有用户名';
+                return false;
+            } else {
+                if (psw.value == '') {
+                    document.getElementById(("errinfo")).innerHTML = '必须有密码';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

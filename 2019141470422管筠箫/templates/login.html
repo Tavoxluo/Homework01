@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <style>
+        body {
+            background-image: url("/imags/background.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content>.avatar {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            <!--background-image: url("/imags/avatar.jpg");-->
+            background-size: 100%;
+        }
+
+        .content>.loginOrRegisterBox {
+            height: 340px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.3)
+        }
+
+        .content>.loginOrRegisterBox>.witch {
+            height: 40px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            list-style: none;
+        }
+
+        .content>.loginOrRegisterBox>.witch>#loginButton,
+        .content>.loginOrRegisterBox>.witch>#registerButton {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .content>.loginOrRegisterBox>.witch>#loginButton {
+            border-bottom: 2px solid #fff;
+            float: left;
+            margin-left: -20px;
+        }
+
+        .content>.loginOrRegisterBox>.witch>#registerButton {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .content>.loginOrRegisterBox>#form>form>input {
+            width: 97.5%;
+            height: 40px;
+            margin-top: 15px;
+            line-height: 20px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border-width: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .content>.loginOrRegisterBox>#form>form>input[type='submit'] {
+            background-color: aqua;
+            width: 100%;
+            color: white;
+        }
+
+        .content>.loginOrRegisterBox>#form>form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 80%;
+        }
+        .content>.loginOrRegisterBox>#form>form>div {
+            margin-top: 20px;
+            height: 40px;
+            width: 100%;
+        }
+        .content>.loginOrRegisterBox>#form>form>div>input,
+        .content>.loginOrRegisterBox>#form>form>div>p {
+            float: left;
+        }
+        .content>.loginOrRegisterBox>#form>form>div>a {
+            float: right;
+            margin-top: 1px;
+            color: white;
+            text-decoration: none;
+        }
+        .content>.loginOrRegisterBox>#form>form>div>p {
+            margin-top: 1.5px;
+            color: white;
+        }
+        .content>.loginOrRegisterBox>#form>form>div>input {
+            height: 20px;
+            width: 20px;
+        }
+        .content>.loginOrRegisterBox>#form>form>div>input::after {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .content>.loginOrRegisterBox>#form>form>div>a:visited {
+            color: white;
+        }
+        #register {
+            display: none;
+        }
+        #create{
+            font-size: 8px;
+            margin-top: 10px;
+            text-align: center;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar"></div>
+        <div class="loginOrRegisterBox">
+            <ul class="witch">
+                <li id="loginButton">登录</li>
+                <li id="registerButton">注册</li>
+            </ul>
+            <div id="form">
+				<!--这里发get请求的url类似于/login.html?username=root&password=123-->
+                <form action="/loginsuccess.html" id="login">
+                    <input type="text" placeholder="用户名" name="username">
+                    <input type="password" placeholder="密码" name="password">
+					<!--
+					<div>
+                        <input type="checkbox" name="" id="">
+                        <p>记住密码</p>
+                        <a href="#">忘记密码？</a>
+                    </div>
+					-->                    
+                    <input type="submit" value="登 录">
+                </form>
+				
+                <form action="/register.html" id="register">
+                    <input type="text" placeholder="用户名" name="username">
+                    <!--<input type="email" name="email" id="" placeholder="邮箱"> -->
+                    <input type="password" placeholder="密码" name="password">
+					<input type="password" placeholder="确认密码" name="confirm">
+                    <input type="submit" value="立即注册">                    
+                </form>
+				
+                <div id="create">Created By &#64;gyx</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

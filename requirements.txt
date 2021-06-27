@@ -1,6 +1,0 @@
-socket
-threading
-configparser
-os
-tkinter
-time

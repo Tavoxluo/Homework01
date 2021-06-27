@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1 {
+            width: 300px;
+            border: 1px solid black;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1 style="text-align: center;color:#f19252">网上银行关联银行卡页面</h1>
+        <form onsubmit="return chk()" action="/bank_account/{{cookie}}" style="margin-top: 40px;margin-left: 20px;" method="get">
+            <span>银行卡账户：</span>
+            <input type="text" name="bank_card_id" id="bank_card_id" /><br /><br />
+
+            <span style="letter-spacing: 1em">密</span>码：
+            <input type="password" name="bank_password" id="bank_password" />
+
+            <br /><br />
+            <input type="submit" style="margin-left: 178px" />
+            <a href="/deconnect/{{cookie}}">解绑</a>
+        </form>
+        <div id="errinfo" style="color:red;">
+        </div>
+    </div>
+    <script>
+        function chk() {
+            var myform = document.getElementById("bank_card_id");
+            var psw = document.getElementById("bank_password");
+            if (myform.value == '') {
+                document.getElementById(("errinfo")).innerHTML = '必须有银行卡账户';
+                return false;
+            } else {
+                if (psw.value == '') {
+                    document.getElementById(("errinfo")).innerHTML = '必须有密码';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

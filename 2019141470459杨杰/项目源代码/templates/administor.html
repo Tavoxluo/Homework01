@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>registor_failed</title>
+    <style type="text/css">
+        div {
+            text-align: center;
+            line-height: 200px;
+            /*文字水平居中*/
+            margin: auto;
+            /*div水平居中*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <head>欢迎来到网上银行</head>
+        <br />欢迎管理员：{{username}}<br />
+        <table border="1" align="center">
+            <tr>
+                <td>交易总量分析
+                    <br />
+                    <a href="/static/{{cookie}}/unfinish.html">交易记录</a>
+                </td>
+                <td>添加银行卡账户
+                    <br />
+                    <a href="/static/{{cookie}}/unfinish.html">关联详情</a>
+                </td>
+                <td>账户登录分析
+                    <br />
+                    <a href="/static/{{cookie}}/unfinish.html">点击查看</a>
+                </td>
+                <td>交易分析
+                    <br />
+                    <a href="/static/{{cookie}}/unfinish.html">点击进行交易</a>
+                </td>
+            </tr>
+        </table>
+        <a href='/logout/{{cookie}}' align="center">注销账户</a>
+    </div>
+
+
+</body>
+
+</html>

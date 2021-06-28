@@ -1,0 +1,4 @@
+本项目主要使用的Python模块为socket、threading、chatterbot
+pip    21.1.2
+chatterbot    1.0.8
+其中，chatterbot需要通过pip命令进行安装，Python版本为3.7

@@ -1,0 +1,4 @@
+系统：windows10
+工具：vscode
+python版本：python 3.6.2
+使用的包：socket   tkinter   threading   json  os

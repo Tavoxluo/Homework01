@@ -7,3 +7,5 @@
 - 接着在前面那台使用`join ip port`连接至另一台主机
 - 使用`upload filename`上传一个文件，此时会产生一个`.seed`文件，为种子文件
 - 使用`retr seedfile.seed`将文件下载回文件夹内
+
+可以使用文件“kademlia实现分析”进行测试。

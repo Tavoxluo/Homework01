@@ -1,1 +1,4 @@
 这是配置文档说明
+python版本：Python 3.8.3
+运行环境：windows10
+经过测试python3.6版本也可运行发送邮件

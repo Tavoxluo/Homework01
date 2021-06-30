@@ -199,10 +199,10 @@ def read_seed(filepath):
 
 # 从网络上凭借种子文件获取一个文件
 def retrive_from_nodes(filename, key_info: dict):
-    tasks = {}
+    tasks = []
     for k in key_info.keys():
-        tasks[k] = server.get(key_info[k])
-    data = asyncio.gather(tasks)
+        tasks[int(k)] = server.get(key_info[k])
+    data = asyncio.gather(*tasks)
     out = open(filename, 'wb+')
     for d in data.result():
         out.write(d)

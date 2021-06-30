@@ -1,0 +1,24 @@
+Python 版本为3.6
+安装的相应的库为：
+altgraph                  0.17
+astroid                   2.4.2
+biopython                 1.78
+colorama                  0.4.4
+future                    0.18.2
+isort                     5.6.4
+lazy-object-proxy         1.4.3
+mccabe                    0.6.1
+numpy                     1.19.4
+pefile                    2019.4.18
+Pillow                    8.2.0
+pip                       21.0.1
+pygame                    2.0.1
+pyinstaller               4.2
+pyinstaller-hooks-contrib 2020.11
+pylint                    2.6.0
+pywin32-ctypes            0.2.0
+setuptools                47.1.0
+six                       1.15.0
+toml                      0.10.2
+wrapt                     1.12.1
+使用VScode编写完成并测试

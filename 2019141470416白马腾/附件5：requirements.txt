@@ -1,0 +1,15 @@
+项目需要的配置环境为：
+python 3.7/python 3.6
+项目需要的配置包：
+1.	configparser
+2.	os
+3.	threading 
+4.	time
+5.	xlrd
+6.	math
+7.	numpy
+8.	xlsxwriter
+9.	openpyxl
+10.	matplotlib
+11.	mpl_toolkits
+12.	datetime

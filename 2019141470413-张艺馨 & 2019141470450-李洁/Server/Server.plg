@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Server - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/Server.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\QC\Server\ClearDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\QC\Server\Server.cpp"
+"C:\Documents and Settings\Administrator\桌面\QC\Server\ServerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP93.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/Server.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\QC\Server\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP94.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Server.pdb" /machine:I386 /out:"Release/Server.exe"  ".\Release\ClearDlg.obj" ".\Release\Server.obj" ".\Release\ServerDlg.obj" ".\Release\StdAfx.obj" ".\Release\Server.res" "
+<h3>Output Window</h3>
+Compiling...
+Error spawning cl.exe
+Creating command line "bscmake.exe /nologo /o"Release/Server.bsc"  ".\Release\StdAfx.sbr" ".\Release\ClearDlg.sbr" ".\Release\Server.sbr" ".\Release\ServerDlg.sbr""
+Creating browse info file...
+Error spawning bscmake.exe
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Server.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

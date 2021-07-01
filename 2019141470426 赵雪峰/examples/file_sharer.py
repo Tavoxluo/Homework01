@@ -201,8 +201,10 @@ def read_seed(filepath):
 def retrive_from_nodes(filename, key_info: dict):
     tasks = []
     for k in key_info.keys():
-        tasks[int(k)] = server.get(key_info[k])
+        tasks.append(server.get(key_info[k]))
     data = asyncio.gather(*tasks)
+    loop = _get_loop_and_debug()
+    loop.run_until_complete(data)
     out = open(filename, 'wb+')
     for d in data.result():
         out.write(d)

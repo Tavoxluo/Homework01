@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Client - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/Client.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\QC\Client\ado.cpp"
+"C:\Documents and Settings\Administrator\桌面\QC\Client\Client.cpp"
+"C:\Documents and Settings\Administrator\桌面\QC\Client\ClientDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\QC\Client\Login.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA3.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/Client.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\QC\Client\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA4.tmp" with contents
+[
+WINMM.LIB /nologo /subsystem:windows /incremental:no /pdb:"Release/Client.pdb" /machine:I386 /out:"Release/Client.exe" 
+".\Release\ado.obj"
+".\Release\Client.obj"
+".\Release\ClientDlg.obj"
+".\Release\Login.obj"
+".\Release\StdAfx.obj"
+".\Release\Client.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA4.tmp"
+<h3>Output Window</h3>
+Compiling...
+Error spawning cl.exe
+Creating command line "bscmake.exe /nologo /o"Release/Client.bsc"  ".\Release\StdAfx.sbr" ".\Release\ado.sbr" ".\Release\Client.sbr" ".\Release\ClientDlg.sbr" ".\Release\Login.sbr""
+Creating browse info file...
+Error spawning bscmake.exe
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Client.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

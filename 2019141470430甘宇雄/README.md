@@ -1,5 +1,7 @@
 ## GanMail使用说明
 
+- 打开GanMail文件夹中GanMailClient.exe文件
+
 - 输入用户邮箱
 
 - 输入授权密码

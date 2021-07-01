@@ -1,6 +1,6 @@
 ## GanMail使用说明
 
-- 打开GanMail文件夹中GanMailClient.exe文件
+- clone整个项目后，打开GanMail文件夹中GanMailClient.exe文件
 
 - 输入用户邮箱
 

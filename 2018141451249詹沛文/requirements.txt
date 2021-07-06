@@ -1,0 +1,5 @@
+Python 3.6 3.7版本均测试过可以运行
+依赖包：
+from socket import *
+import base64
+import sys
